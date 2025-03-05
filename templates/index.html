@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alzheimer's Disease Stage Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Alzheimer's Disease Stage Detection</h1>
+      <p class="subheading">Upload an image to determine the Alzheimer's stage</p>
+    </header>
+
+    <main>
+      <div class="card upload-card">
+        <h2>Upload Image</h2>
+        <form action="/" method="POST" enctype="multipart/form-data">
+          <input type="file" name="file" accept="image/*" required>
+          <button type="submit">Upload & Detect</button>
+        </form>
+      </div>
+
+      {% if predicted_stage %}
+      <div class="card result-card">
+        <h3>Prediction Result:</h3>
+        <p>The Alzheimer's stage is:</p>
+        <div class="prediction-box">
+          <p class="stage">{{ predicted_stage }}</p>
+        </div>
+      </div>
+      {% endif %}
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('Project\static\images\alzheimer_disease.jpg');  /* Add background image */
+    background-size: cover;  /* Ensure image covers the whole background */
+    background-position: center;
+    color: #2c3e50;  /* Dark grey text for readability */
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Container for Main Content */
+  .container {
+    max-width: 500px;  /* Smaller width for a compact design */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white for text readability */
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+  }
+  
+  /* Header Section */
+  header h1 {
+    font-size: 2rem;  /* Smaller font size for title */
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 1rem;
+    color: #7f8c8d;  /* Light grey text */
+    margin-top: 5px;
+  }
+  
+  /* Card Styling (Upload & Result) */
+  .card {
+    background-color: #ffffff;  /* Clean white background */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);  /* Light shadow */
+  }
+  
+  .upload-card h2, .result-card h3 {
+    font-size: 1.2rem;  /* Slightly smaller heading size */
+    margin-bottom: 15px;
+  }
+  
+  .upload-card input[type="file"] {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    width: 80%;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .upload-card input[type="file"]:hover {
+    border-color: #3498db;  /* Light blue on hover */
+  }
+  
+  .upload-card button {
+    padding: 10px 20px;
+    background-color: #3498db;  /* Light blue button */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 80%;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .upload-card button:hover {
+    background-color: #2980b9;  /* Slightly darker blue on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Result Section */
+  .result-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .prediction-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #ecf0f1;  /* Light grey background for the result box */
+    border-radius: 8px;
+    color: #2c3e50;
+  }
+  
+  .stage {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #e74c3c;  /* Red color for the prediction result */
+    margin-top: 10px;
+  }
+  
