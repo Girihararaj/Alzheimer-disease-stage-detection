@@ -77,5 +77,6 @@ def home():
 
     return render_template('index.html', predicted_stage=None)
 
-if __name__ == '__main__':
-    app.run(debug=True,port=8000)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Default to 10000 if PORT is not set
+    app.run(host="0.0.0.0", port=port)
